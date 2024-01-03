@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 
+// when asynchronous method/function is completed when return "promise"
 const connectDB = async () => {
   try {
     const connectionInstance = await mongoose.connect(
